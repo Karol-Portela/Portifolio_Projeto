@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap/css/style.css" rel="stylesheet" type="text/css">
+  <title>Portfólio Pessoal</title>
+</head>
+<body>
+    <!-- navbar para links das páginas -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CV online</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Principal</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#dadospessoais">Dados Pessoais</a></li>
+                            <li><a class="dropdown-item" href="index.html#atuacao">Área de Atuação</a></li>
+                            <li><a class="dropdown-item" href="index.html#outrosdados">Outros Dados</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formacao.html">Formação Acadêmica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experiencia.html">Experiência Profissional</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="contato" class="contato">
+        <h2>Entre em Contato</h2>
+        <form action="" method="post" class="col-md-6">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="usuario_nome" />
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="usuario_email" />
+            </div>
+            <div>
+                <label for="msg"></label>
+                <textarea id="msg" name="usuario_msg" placeholder=" Deixe uma mensagem"></textarea>
+            </div>
+            <div id="divBtnAlert"></div>
+            <button type="button" class="btn btn-info" id="btnAlert">Enviar</button>                
+        </form>
+    </section>
+
+    <br>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/main.js"></script>
+</body>
+</html>
